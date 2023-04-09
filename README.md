@@ -42,7 +42,7 @@ fetch(apiUrl, {
 
 ## Credits
 
-This project was created by [Your Name].
+This project was created by Arman Idrisi.
 
 ## License
 
