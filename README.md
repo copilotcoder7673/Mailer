@@ -1,52 +1,49 @@
-# Mailer
-A Simple Email Sender Api In NodeJS
+# Email Sender API
 
-### required parameters 
-request and response body type : json
+This is a simple API built with Node.js, Express, and Nodemailer that allows you to send emails programmatically using a REST API.
 
-sender,
-password,
-recipient,
-subject,
-message
+# Motivation
 
-Example Code Snippet To Send Mail using Javascript fetch
+This project was created to provide a simple way to send emails programmatically using Node.js and Nodemailer. It is designed to be easy to use and customize, making it a great starting point for building your own email sending functionality.
 
-```javascript
-const apiUrl = "https://gmailapi-armanidrisi.vercel.app/api/mail/";
+# Tech/framework used
+- Node.js
+- Express
+- Nodemailer
 
-const requestBody = {
+# Code Example
 
-  sender: "yourmail@gmail.com",
+To send an email, send a POST request to the ```/api/mail``` endpoint with the following JSON data:
 
-  password: "yourpass",
+```javascript 
+const apiUrl = "https://gmailapi-armanidrisi.vercel.app/api/mail/"; 
 
-  recipient: "receiver mail",
+const requestBody = { 
+  sender: "yourmail@gmail.com", 
+  password: "yourpass", 
+  recipient: "receiver mail", 
+  subject: "subject", 
+  message: "msg" 
+}; 
 
-  subject: "subject",
+fetch(apiUrl, { 
+  method: "POST", 
+  headers: { 
+    "Content-Type": "application/json" 
+  }, 
+  body: JSON.stringify(requestBody) 
+}) 
+  .then(response => response.json()) 
+  .then(data => console.log(data)) 
+  .catch(error => console.error(error)); 
 
-  message: "msg"
-
-};
-
-fetch(apiUrl, {
-
-  method: "POST",
-
-  headers: {
-
-    "Content-Type": "application/json"
-
-  },
-
-  body: JSON.stringify(requestBody)
-
-})
-
-  .then(response => response.json())
-
-  .then(data => console.log(data))
-
-  .catch(error => console.error(error));
 
 ```
+
+# Credits
+
+This project was created by [Your Name].
+
+# License
+
+This project is licensed under the MIT License. 
