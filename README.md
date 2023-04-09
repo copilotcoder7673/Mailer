@@ -1,17 +1,17 @@
-# Email Sender API
+## Email Sender API
 
 This is a simple API built with Node.js, Express, and Nodemailer that allows you to send emails programmatically using a REST API.
 
-# Motivation
+## Motivation
 
 This project was created to provide a simple way to send emails programmatically using Node.js and Nodemailer. It is designed to be easy to use and customize, making it a great starting point for building your own email sending functionality.
 
-# Tech/framework used
+## Tech/framework used
 - Node.js
 - Express
 - Nodemailer
 
-# Code Example
+##Code Example
 
 To send an email, send a POST request to the ```/api/mail``` endpoint with the following JSON data:
 
@@ -40,10 +40,10 @@ fetch(apiUrl, {
 
 ```
 
-# Credits
+## Credits
 
 This project was created by [Your Name].
 
-# License
+## License
 
 This project is licensed under the MIT License. 
