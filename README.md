@@ -11,7 +11,7 @@ This project was created to provide a simple way to send emails programmatically
 - Express
 - Nodemailer
 
-##Code Example
+## Code Example
 
 To send an email, send a POST request to the ```/api/mail``` endpoint with the following JSON data:
 
@@ -39,6 +39,12 @@ fetch(apiUrl, {
 
 
 ```
+
+## Deploy on your own
+### on vercel
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Armanidrisi/Mailer)
+
 
 ## Credits
 
