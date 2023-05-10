@@ -16,6 +16,7 @@ This project was created to provide a simple way to send emails programmatically
 To send an email, send a POST request to the ```/api/mail``` endpoint with the following JSON data:
 
 ```javascript 
+//Example javascript code 
 const apiUrl = "https://gmailapi-armanidrisi.vercel.app/api/mail/"; 
 
 const requestBody = { 
